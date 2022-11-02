@@ -39,7 +39,7 @@
 <!--header de la APP-->
 <div class="row  text-white d-f justify-content-center">
 	<div class="col-sm-12 col-md-8 d-f justify-content-center">
-<form action="factura.php" method="post"><!--ENVIA LOS DATOS DE FORMA OCULTA-->
+<form action="factura.php" method="get"><!--ENVIA LOS DATOS DE FORMA OCULTA-->
 <h1 class="text-center text-white">Calcular pedido</h1>
 <label form="">Producto: </label>
 <select name="producto" id="">

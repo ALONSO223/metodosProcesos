@@ -1,14 +1,14 @@
 <?php
 /*validar la entrada de datos */
-if (!$_POST) {
+if (!$_REQUEST) {
     /**funcion para redirigir a otro archivo */
     header('Location: index.php');
 }
 //guardar los datos de los formularios en las variables
-$producto = $_POST['producto'];
-$cantidad = $_POST['cantidad'];
-$precio = $_POST['precio'];
-$formaPago = $_POST['formaPago'];
+$producto = $_REQUESTT['producto'];
+$cantidad = $_REQUEST['cantidad'];
+$precio = $_REQUEST['precio'];
+$formaPago = $_REQUEST['formaPago'];
 $subtotal = $cantidad * $precio;
 $iva = $subtotal * 0.21;
 $moneda = '$';
